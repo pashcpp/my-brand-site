@@ -125,3 +125,10 @@ body {
   padding: 20px 0;
   border-top: 1px solid #ccc;
 }
+/* стиль логотипа podbay — вставь в style.css */
+.logo{
+  font-family:'Poppins',sans-serif;
+  font-size:28px;
+  font-weight:600;
+  letter-spacing:0.5px;
+}

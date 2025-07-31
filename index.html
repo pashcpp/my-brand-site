@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Brand — Натуральная косметика</title>
+    <title>podbay — Натуральная косметика</title>
+
+    <!-- Google Fonts: Poppins for logo, Inter for текст -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
-        <div class="logo">My&nbsp;Brand</div>
+        <!-- Лого = название бренда -->
+        <div class="logo">podbay</div>
         <nav class="nav">
           <a href="#products">Каталог</a>
           <a href="#about">О&nbsp;бренде</a>
@@ -23,15 +30,14 @@
     <section id="products" class="products first-screen">
       <div class="container">
         <h2>Наши продукты</h2>
-        <div class="product-grid">
-          <!-- Тестовый товар -->
+        <div id="catalog" class="product-grid">
+          <!-- Продукты будут рендериться из script.js или можно оставить статичный блок -->
           <div class="product-card">
             <img src="images/placeholder.jpg" alt="Крем Random Glow" />
-            <h3>Крем‑сыворотка «Random&nbsp;Glow»</h3>
+            <h3>Крем-сыворотка «Random&nbsp;Glow»</h3>
             <p class="price"><span class="old-price">₴650</span> ₴590</p>
             <a class="btn add-to-cart" href="#">В&nbsp;корзину</a>
           </div>
-          <!-- Ещё товары копируй по образцу -->
         </div>
       </div>
     </section>
@@ -47,7 +53,7 @@
     <!-- Футер / контакты -->
     <footer id="contacts" class="footer">
       <div class="container">
-        <p>© 2025 My Brand. Все права защищены.</p>
+        <p>© 2025 podbay. Все права защищены.</p>
         <p>Связаться: <a href="tel:+380123456789">+380&nbsp;12&nbsp;345&nbsp;67&nbsp;89</a></p>
       </div>
     </footer>
