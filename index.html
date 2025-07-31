@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>podbay — Натуральная косметика</title>
+    <title>podbay — Натуральна косметика</title>
 
-    <!-- Google Fonts: Poppins for logo, Inter for текст -->
+    <!-- Google Fonts: Poppins for logo, Inter for text -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,48 +13,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- Шапка сайту -->
     <header class="header">
       <div class="container">
-        <!-- Лого = название бренда -->
         <div class="logo">podbay</div>
         <nav class="nav">
           <a href="#products">Каталог</a>
-          <a href="#about">О&nbsp;бренде</a>
-          <a href="#contacts">Контакты</a>
+          <a href="#about">Про&nbsp;бренд</a>
+          <a href="#contacts">Контакти</a>
         </nav>
       </div>
     </header>
 
-    <!-- Каталог (первый экран) -->
+    <!-- Каталог (перший екран) -->
     <section id="products" class="products first-screen">
       <div class="container">
-        <h2>Наши продукты</h2>
+        <h2>Наші продукти</h2>
         <div id="catalog" class="product-grid">
-          <!-- Продукты будут рендериться из script.js или можно оставить статичный блок -->
+          <!-- 1. Сироватка -->
           <div class="product-card">
-            <img src="images/placeholder.jpg" alt="Крем Random Glow" />
-            <h3>Крем-сыворотка «Random&nbsp;Glow»</h3>
-            <p class="price"><span class="old-price">₴650</span> ₴590</p>
-            <a class="btn add-to-cart" href="#">В&nbsp;корзину</a>
+            <img src="images/serum.jpg" alt="Сироватка GlowUp" />
+            <h3>Сироватка «Glow&nbsp;Up»</h3>
+            <p class="price"><span class="old-price">₴720</span> ₴650</p>
+            <a class="btn add-to-cart" href="#">У&nbsp;кошик</a>
+          </div>
+          <!-- 2. Тонік -->
+          <div class="product-card">
+            <img src="images/tonic.jpg" alt="Тонік FreshMist" />
+            <h3>Тонік «Fresh&nbsp;Mist»</h3>
+            <p class="price">₴450</p>
+            <a class="btn add-to-cart" href="#">У&nbsp;кошик</a>
+          </div>
+          <!-- 3. Крем -->
+          <div class="product-card">
+            <img src="images/cream.jpg" alt="Крем Balance" />
+            <h3>Крем «Balance»</h3>
+            <p class="price"><span class="old-price">₴580</span> ₴520</p>
+            <a class="btn add-to-cart" href="#">У&nbsp;кошик</a>
+          </div>
+          <!-- 4. Маска -->
+          <div class="product-card">
+            <img src="images/mask.jpg" alt="Маска NightCalm" />
+            <h3>Маска «Night&nbsp;Calm»</h3>
+            <p class="price">₴690</p>
+            <a class="btn add-to-cart" href="#">У&nbsp;кошик</a>
+          </div>
+          <!-- 5. Олія -->
+          <div class="product-card">
+            <img src="images/oil.jpg" alt="Олія Radiance" />
+            <h3>Олія «Radiance»</h3>
+            <p class="price"><span class="old-price">₴820</span> ₴750</p>
+            <a class="btn add-to-cart" href="#">У&nbsp;кошик</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- О бренде -->
+    <!-- Про бренд -->
     <section id="about" class="about">
       <div class="container">
-        <h2>О&nbsp;бренде</h2>
-        <p>Мы создаём косметику короткого состава без лишних ингредиентов. Сделано в&nbsp;Украине.</p>
+        <h2>Про&nbsp;бренд</h2>
+        <p>podbay створює мінімалістичну косметику короткого складу без зайвих інгредієнтів. Вироблено в&nbsp;Україні.</p>
       </div>
     </section>
 
-    <!-- Футер / контакты -->
+    <!-- Футер / контакти -->
     <footer id="contacts" class="footer">
       <div class="container">
-        <p>© 2025 podbay. Все права защищены.</p>
-        <p>Связаться: <a href="tel:+380123456789">+380&nbsp;12&nbsp;345&nbsp;67&nbsp;89</a></p>
+        <p>© 2025 podbay. Всі права захищені.</p>
+        <p>Зв’язатися: <a href="tel:+380123456789">+380&nbsp;12&nbsp;345&nbsp;67&nbsp;89</a></p>
       </div>
     </footer>
 
