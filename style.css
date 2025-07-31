@@ -1,134 +1,174 @@
-/* Сброс стилей (reset) - часто используют normalize.css, можно использовать и свой сброс */
+/* ============================
+   BASIC RESET & TYPOGRAPHY
+   ============================ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  color: #000;
+  font-family: "Inter", "Arial", sans-serif;
   background-color: #fff;
+  color: #000;
   line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.25s;
 }
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 
-/* Шапка (header) */
+/* ============================
+   HEADER
+   ============================ */
 .header {
   padding: 20px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 0.5px;
 }
 
-.nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #000;
+.nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
   font-weight: 500;
 }
 
-/* Hero section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-  background: url('images/hero-bg.jpg') center/cover no-repeat;
+.nav a:hover {
+  opacity: 0.6;
+}
+
+/* ============================
+   FIRST SCREEN
+   ============================ */
+.first-screen {
+  padding-top: 40px;
+}
+
+/* ============================
+   PRODUCTS
+   ============================ */
+.products {
+  padding: 60px 0 80px;
+}
+
+.products h2 {
+  font-size: 32px;
   text-align: center;
-  color: #fff;
+  margin-bottom: 48px;
 }
 
-.hero .container {
-  background-color: rgba(0,0,0,0.5); /* полупрозрачный фон, чтобы текст читался */
-  padding: 40px;
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
 }
 
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.product-card {
+  width: 280px;
+  border: 1px solid #e5e5e5;
+  padding: 24px 20px;
+  text-align: center;
+  transition: 0.3s transform, 0.3s box-shadow;
 }
 
-.hero p {
-  font-size: 18px;
-  margin-bottom: 30px;
+.product-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.price {
+  font: 600 16px/1.2 "Inter", sans-serif;
+  margin-bottom: 16px;
 }
 
 .btn {
   display: inline-block;
-  background-color: #000;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-weight: bold;
+  padding: 12px 28px;
   border: 2px solid #000;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: 0.3s background, 0.3s color;
 }
 
 .btn:hover {
-  background-color: #fff;
-  color: #000;
+  background: #000;
+  color: #fff;
 }
 
-/* О бренде */
+.product-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+/* ============================
+   ABOUT
+   ============================ */
 .about {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .about h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-/* Продукция */
-.products {
-  padding: 60px 0;
-}
-
-.products h2 {
-  margin-bottom: 40px;
+  font-size: 32px;
+  margin-bottom: 24px;
   text-align: center;
-  font-size: 28px;
 }
 
-.product-card {
-  display: inline-block;
-  width: 28%;
-  margin: 1%;
-  vertical-align: top;
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
   text-align: center;
-  border: 1px solid #ccc;
-  padding: 20px;
 }
 
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.product-card h3 {
-  margin-bottom: 10px;
-}
-
-/* Футер */
+/* ============================
+   FOOTER
+   ============================ */
 .footer {
+  padding: 40px 0;
+  border-top: 1px solid #e5e5e5;
   text-align: center;
-  padding: 20px 0;
-  border-top: 1px solid #ccc;
+  font-size: 14px;
 }
-/* стиль логотипа podbay — вставь в style.css */
-.logo{
-  font-family:'Poppins',sans-serif;
-  font-size:28px;
-  font-weight:600;
-  letter-spacing:0.5px;
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .product-card {
+    width: 90%;
+  }
 }
