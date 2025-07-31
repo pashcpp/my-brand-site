@@ -1,0 +1,127 @@
+/* Сброс стилей (reset) - часто используют normalize.css, можно использовать и свой сброс */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #000;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Шапка (header) */
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .container {
+  background-color: rgba(0,0,0,0.5); /* полупрозрачный фон, чтобы текст читался */
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: 2px solid #000;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* О бренде */
+.about {
+  padding: 60px 0;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Продукция */
+.products {
+  padding: 60px 0;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.product-card {
+  display: inline-block;
+  width: 28%;
+  margin: 1%;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+}
+
+/* Футер */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
