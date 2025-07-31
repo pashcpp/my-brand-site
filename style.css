@@ -66,8 +66,16 @@ a {
    FIRST SCREEN
    ============================ */
 .first-screen {
-  /* збільшуємо верхній відступ для "банера" */
-  padding-top: 80px;
+  padding-top: 40px;
+}
+
+/* банер-заглушка */
+.banner-placeholder {
+  width: 100%;
+  height: 200px;
+  background: #000;
+  margin-bottom: 48px;
+  border-radius: 8px;
 }
 
 /* ============================
